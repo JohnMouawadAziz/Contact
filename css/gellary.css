@@ -1,1 +1,22 @@
-.hedaer{text-align: center}
+.father{background: rgba(0, 0, 0, 0.6)}
+.bodyType{background: url('../images/unsplash-high.jpg') no-repeat center center fixed}
+.container .head {text-align: center; font-size: 40px; font-style: italic ; color: #aaa}
+
+table {
+    background: transparent;
+    text-align: center;
+    margin-left: 300px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+table:hover{border-color: red;}
+
+.inputTybe{width: 300px ; margin:5px 0; background: rgba(0, 0, 0, .8) ; color: white}
+.inputTybe:hover{border-color: blue;}
+td , th {font-weight: bold ; font-size: 20px ; font-style: italic ; text-align: center;color: white} 
+
+.btn-danger:{font-weight: bold ; font-size: 20px}
+.btn-danger:hover {color: red ; background: white; border-color: red}
+
+.fa {box-shadow: 10px 10px 5px #888888;margin-left:605px;}

@@ -1,20 +1,33 @@
-contactGallery.controller('loginController', ['$scope', '$timeout', function ($scope) {
-    $scope.login = {
-        userName: '',
-        password: ''
-    };
+contactGallery.controller('loginController', ['$scope', '$location', function ($scope, $location) {
 
-    $scope.loginAuth = loginAuth;
+   $scope.login = {
 
-    function loginAuth() {
+       email: '',
 
-     console.log($scope.login);
-     var email=$scope.login.email;
-     var password =$scope.login.password;
-     if ($scope.email=='john@gmail.com' && $scope.password=='john') {
-        $location.path('/gallery');
+       password: ''
 
-    }
+   };
 
-} 
-}]);
+
+
+   $scope.loginAuth = loginAuth;
+
+//function to move from login to gellary if email and pass was true
+
+   function loginAuth() {
+
+       console.log($scope.login);
+
+       if ($scope.login.email == 'john@gmail.com' && $scope.login.password == 'john') {
+
+           console.log('here');
+
+           $location.path('/gallery');
+
+       }
+
+
+
+   }
+
+}]); 

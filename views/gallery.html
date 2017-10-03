@@ -1,30 +1,32 @@
- <div class="container-fluid bodyType" >
-      <div class="container">
-        <h3 class="hedaer">Contact Information</h3>
+ <div class="container-fluid father " style="height: 1000px" >
+      <div class="container-fluid bodyType" style="height: 400px;width: 101%" >
+        <h3 class="head text-center">Contact Information</h3>
         <div class="row">
-          <table cellpadding="2" cellspacing="2" border="1" class="tab1 text-center">
+
+        <!--------Add information table-------->
+          <table cellpadding="5" cellspacing="5" border="4" class=" text-center wow fadeInDown">
             <tr>
               <td class="fontType">ID</td>
               <td>
-                <input type="text" ng-model="id" class="INPUT">
+                <input type="text" ng-model="id" class="inputTybe hvr-grow">
               </td>
             </tr>
             <tr>
               <td class="fontType">Name</td>
               <td>
-                <input type="text" ng-model="name" class="INPUT">
+                <input type="text" ng-model="name" class="inputTybe hvr-grow">
               </td>
             </tr>
             <tr>
               <td class="fontType">email</td>
               <td>
-                <input type="text" ng-model="email" class="INPUT">
+                <input type="text" ng-model="email" class="inputTybe hvr-grow">
               </td>
             </tr>
             <tr>
               <td class="fontType">phone</td>
               <td>
-                <input type="text" ng-model="quantety" class="INPUT">
+                <input type="text" ng-model="quantety" class="inputTybe hvr-grow">
               </td>
             </tr>
             <tr>
@@ -43,11 +45,11 @@
       </div>
 
 
-      
+      <!------------------view information table---------->
       <div class="container">
         <div class="row text-center">
-          <h3 class="head1">Contact Table</h3>
-          <table cellspacing="2" border="1" class="tab1">
+          <h3 class="head text-center">Contact Table</h3>
+          <table cellspacing="2" border="1" class="tab1 wow fadeInUp">
             <tr>
               <th class="fontType">ID</th>
               <th class="fontType">Name</th>
@@ -63,10 +65,10 @@
               <td>
                 <div class="row">
                   <div class="col-md-6">
-                    <button ng-click="del(product.id)" class="btn-tabl2 btn btn-danger">Delete</button>
+                    <button ng-click="del(product.id)" class="btn-tabl2 btn btn-danger hvr-grow">Delete</button>
                   </div>
                   <div class="col-md-6">
-                    <button ng-click="selectEdit(product.id)" class="btn-tabl2 btn btn-info">Edit</button>
+                    <button ng-click="selectEdit(product.id)" class="btn-tabl2 btn btn-info hvr-grow">Edit</button>
                   </div>
                 </div>
               </td>
